@@ -7,7 +7,6 @@
 #SBATCh --job-name=wget_novogene
 #SBATCH --partition=cpu-core-sponsored
 #SBATCH --mail-type=END 
-#SBATCH --mail-user=Chao-Jen.Wong@seattlechildrens.org 
 
 echo "FASTQ file: $1"
 echo "Destination: $2"
