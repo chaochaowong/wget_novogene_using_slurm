@@ -14,4 +14,4 @@ fq=$1
 dest=$2
 cd $dest
 
-wget -r -c --cut-dirs=2 $fq
+wget -r -c $fq
