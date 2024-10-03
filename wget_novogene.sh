@@ -10,8 +10,11 @@
 
 echo "FASTQ file: $1"
 echo "Destination: $2"
+
 fq=$1
 dest=$2
+mkdir -p $dest
+
 cd $dest
 
-wget -r -c $fq
+wget -c -r --cut-dirs=2 --no-remove-listing -nH $fq
